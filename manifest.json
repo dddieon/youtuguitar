@@ -1,0 +1,24 @@
+{
+    "name": "youtuguitar",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "assets/images/icons/icon16.png",
+            "48": "assets/images/icons/icon48.png"
+        }
+    },
+    "icons": {
+        "16": "assets/images/icons/icon16.png",
+        "48": "assets/images/icons/icon48.png"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["assets/index-d526a0c5.css"],
+            "js": ["assets/index-ce2bde8b.js"]
+        }
+    ]
+}
